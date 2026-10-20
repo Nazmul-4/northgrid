@@ -1,0 +1,56 @@
+// ============================================
+// NAVIGATION TYPES
+// Used for our Mega-Menu (Phase 6)
+// ============================================
+
+export interface NavLink {
+  label: string;        // What the user sees, e.g. "Colocation"
+  href: string;          // Where it links to, e.g. "/colocation"
+  description: string;   // Short subtitle shown in the dropdown
+}
+
+export interface NavCategory {
+  title: string;         // Column heading in the mega-menu, e.g. "Services"
+  links: NavLink[];      // A list of NavLink items under this category
+}
+
+// ============================================
+// PARTNER TYPES
+// Used for our Logo Marquee (Phase 8)
+// ============================================
+
+export interface Partner {
+  name: string;          // e.g. "Enterprise Hardware Partner"
+  category: string;      // e.g. "Networking" or "Power Systems"
+}
+
+// ============================================
+// COLOCATION PLAN TYPES
+// Used for our Pricing Grid (Phase 9)
+// ============================================
+
+export interface ColocationPlan {
+  id: string;                // unique ID, e.g. "quarter-rack"
+  name: string;               // e.g. "1/4 Rack"
+  description: string;        // short marketing line
+  priceMonthly: number;       // price in BDT if billed monthly
+  priceAnnual: number;        // price in BDT if billed annually (usually discounted)
+  powerFeed: string[];        // e.g. ["16A Single Feed", "32A Dual Feed"]
+  specs: string[];            // bullet point features
+  featured?: boolean;         // optional: highlights this card as "Most Popular"
+}
+
+// ============================================
+// STARLINK HARDWARE KIT TYPES
+// Used for our Interactive Selector (Phase 10)
+// ============================================
+
+export interface StarlinkKit {
+  id: string;                // unique ID, e.g. "mini-kit"
+  name: string;               // e.g. "Mini Kit"
+  priceBDT: number;           // price in Bangladeshi Taka
+  throughput: string;         // e.g. "Up to 100 Mbps"
+  latency: string;            // e.g. "25-50ms"
+  mountType: string;          // e.g. "Portable Tripod"
+  description: string;        // short description
+}
