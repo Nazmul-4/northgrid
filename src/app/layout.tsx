@@ -1,9 +1,27 @@
-import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+export const metadata: Metadata = {
+  title: "NorthGrid Data Centers",
+  description: "Tier III Infrastructure. Zero Compromise.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="bg-slate-950 antialiased">{children}</body>
+      <body className={`${inter.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
