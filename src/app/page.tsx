@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import PartnerMarquee from "@/components/sections/PartnerMarquee";
 import ColocationGrid from "@/components/sections/ColocationGrid";
+import StarlinkSelector from "@/components/sections/StarlinkSelector";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <PartnerMarquee />
       <ColocationGrid />
+      <StarlinkSelector />
     </main>
   );
 }
