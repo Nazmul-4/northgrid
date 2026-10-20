@@ -12,6 +12,24 @@
 
   /* Font */
   --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  /* Custom Marquee Animation */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Ensure hover anywhere inside the ticker wrapper pauses the track */
+.group:hover .animate-marquee,
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 body {
