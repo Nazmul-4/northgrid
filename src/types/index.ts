@@ -54,3 +54,15 @@ export interface StarlinkKit {
   mountType: string;          // e.g. "Portable Tripod"
   description: string;        // short description
 }
+
+// ============================================
+// HERO METRICS TYPE
+// Used for our animated counter strip (Phase 7)
+// ============================================
+
+export interface HeroMetric {
+  value: number;        // the number to count up to, e.g. 500
+  prefix?: string;       // optional symbol before the number, e.g. "<"
+  suffix?: string;        // optional symbol after the number, e.g. "+" or " MW"
+  label: string;          // description below the number, e.g. "Racks Deployed"
+}

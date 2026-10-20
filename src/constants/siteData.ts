@@ -1,4 +1,4 @@
-import { NavCategory, Partner, ColocationPlan, StarlinkKit } from "@/types";
+import { NavCategory, Partner, ColocationPlan, StarlinkKit, HeroMetric } from "@/types";
 
 // ============================================
 // MEGA-MENU NAVIGATION DATA
@@ -152,4 +152,14 @@ export const starlinkKits: StarlinkKit[] = [
     mountType: "Flat High-Performance Mount",
     description: "Maximum throughput for business-critical operations",
   },
+];
+
+// ============================================
+// HERO METRICS DATA
+// ============================================
+
+export const heroMetrics: HeroMetric[] = [
+  { value: 500, suffix: "+", label: "Racks Deployed" },
+  { value: 5, suffix: " MW", label: "Power Capacity" },
+  { value: 5, prefix: "<", suffix: "ms", label: "Network Latency" },
 ];
