@@ -55,7 +55,7 @@ export default function HeroSection() {
           className="mt-10"
         >
           <Link
-            href="/contact"
+            href="#contact"
             className="group inline-flex items-center gap-2 rounded-md bg-accent-blue px-8 py-4 font-semibold text-white shadow-[0_0_30px_-5px_rgba(37,99,235,0.6)] transition-all hover:shadow-[0_0_40px_-5px_rgba(37,99,235,0.9)]"
           >
             Get Started

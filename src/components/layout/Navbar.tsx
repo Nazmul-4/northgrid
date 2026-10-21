@@ -74,7 +74,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           {/* CTA - hidden on mobile */}
           <Link
-            href="/contact"
+            href="#contact"
             className="hidden md:inline-block rounded-md bg-accent-blue px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
           >
             Get Started

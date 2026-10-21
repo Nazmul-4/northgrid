@@ -1,0 +1,30 @@
+import {
+  Zap,
+  Eye,
+  TrendingUp,
+  Link2,
+  Lock,
+  Building2,
+  Ruler,
+  Clock,
+  PlugZap,
+  BatteryCharging,
+  Fuel,
+  Snowflake,
+  LucideIcon,
+} from "lucide-react";
+
+export const iconMap: Record<string, LucideIcon> = {
+  Zap,
+  Eye,
+  TrendingUp,
+  Link2,
+  Lock,
+  Building2,
+  Ruler,
+  Clock,
+  PlugZap,
+  BatteryCharging,
+  Fuel,
+  Snowflake,
+};

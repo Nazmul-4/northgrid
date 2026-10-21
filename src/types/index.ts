@@ -66,3 +66,48 @@ export interface HeroMetric {
   suffix?: string;        // optional symbol after the number, e.g. "+" or " MW"
   label: string;          // description below the number, e.g. "Racks Deployed"
 }
+
+// ============================================
+// COMPLIANCE BADGE TYPE
+// Used for our trust-building badges (Phase 11)
+// ============================================
+
+export interface ComplianceBadge {
+  title: string;         // e.g. "Tier III Design"
+  description: string;   // short explanation
+}
+
+// ============================================
+// FAQ TYPE
+// Used for our FAQ Accordion (Phase 11)
+// ============================================
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+// ============================================
+// SERVICE DETAIL PAGE TYPES
+// Used for Rack Space, Private Cage, Power & Cooling pages (Phase 11.5)
+// ============================================
+
+export interface ServiceFeature {
+  icon: string;          // key that matches our iconMap, e.g. "Zap"
+  title: string;
+  description: string;
+}
+
+export interface ServiceSpec {
+  label: string;          // e.g. "Rack Sizes"
+  value: string;           // e.g. "10U, 20U, 42U"
+}
+
+export interface ServiceDetailPage {
+  slug: string;
+  title: string;
+  tagline: string;
+  description: string;
+  features: ServiceFeature[];
+  specs: ServiceSpec[];
+}

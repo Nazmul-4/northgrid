@@ -1,4 +1,5 @@
-import { NavCategory, Partner, ColocationPlan, StarlinkKit, HeroMetric } from "@/types";
+import { NavCategory, Partner, ColocationPlan, StarlinkKit, HeroMetric, ComplianceBadge, FAQItem, ServiceDetailPage } from "@/types";
+
 
 // ============================================
 // MEGA-MENU NAVIGATION DATA
@@ -163,3 +164,173 @@ export const heroMetrics: HeroMetric[] = [
   { value: 5, suffix: " MW", label: "Power Capacity" },
   { value: 5, prefix: "<", suffix: "ms", label: "Network Latency" },
 ];
+
+// ============================================
+// COMPLIANCE BADGES
+// ============================================
+
+export const complianceBadges: ComplianceBadge[] = [
+  {
+    title: "Tier III Design",
+    description: "N+1 redundant power and cooling infrastructure",
+  },
+  {
+    title: "ISO 27001 Aligned",
+    description: "Information security management best practices",
+  },
+  {
+    title: "24/7 NOC Monitoring",
+    description: "Round-the-clock network operations center coverage",
+  },
+  {
+    title: "Biometric Access Control",
+    description: "Multi-factor physical security at every entry point",
+  },
+];
+
+// ============================================
+// FREQUENTLY ASKED QUESTIONS
+// ============================================
+
+export const faqItems: FAQItem[] = [
+  {
+    question: "What is the minimum contract period for colocation?",
+    answer:
+      "Our standard colocation contracts start at a 12-month term, with discounted pricing available for 24 and 36-month commitments.",
+  },
+  {
+    question: "Do you provide remote hands support?",
+    answer:
+      "Yes, our on-site technical team is available 24/7 to assist with hardware reboots, cable management, and basic troubleshooting at no extra charge for registered clients.",
+  },
+  {
+    question: "Can I upgrade from a shared rack to a private cage later?",
+    answer:
+      "Absolutely. Our infrastructure is designed for seamless scaling — most clients start with partial rack space and expand into private cages as their business grows.",
+  },
+  {
+    question: "What internet connectivity options are available?",
+    answer:
+      "We offer direct BDIX peering, multiple Tier-1 international bandwidth providers, and Starlink hardware for redundant failover connectivity.",
+  },
+];
+
+// ============================================
+// RACK SPACE SERVICE DETAIL
+// ============================================
+
+export const rackSpaceService: ServiceDetailPage = {
+  slug: "racks",
+  title: "Rack Space Colocation",
+  tagline: "Flexible rack space built for growing infrastructure needs",
+  description:
+    "From a single quarter rack to a full 42U cabinet, our rack space colocation gives you secure, redundant, and scalable deployment options without the overhead of building your own facility.",
+  features: [
+    {
+      icon: "Zap",
+      title: "Redundant Power",
+      description: "Dual power feeds with automatic failover on every rack",
+    },
+    {
+      icon: "Eye",
+      title: "24/7 Monitoring",
+      description: "Real-time environmental and security monitoring",
+    },
+    {
+      icon: "TrendingUp",
+      title: "Scalable Capacity",
+      description: "Upgrade from quarter rack to full cabinet anytime",
+    },
+    {
+      icon: "Link2",
+      title: "Cross-Connect Ready",
+      description: "Direct cross-connects to carriers and peering partners",
+    },
+  ],
+  specs: [
+    { label: "Rack Sizes", value: "10U, 20U, 42U" },
+    { label: "Power Options", value: "16A Single / 32A Dual Feed" },
+    { label: "Network Uplinks", value: "100 Mbps - 10 Gbps" },
+    { label: "Facility Access", value: "24/7/365 with biometric entry" },
+  ],
+};
+
+// ============================================
+// PRIVATE CAGE SERVICE DETAIL
+// ============================================
+
+export const privateCageService: ServiceDetailPage = {
+  slug: "cages",
+  title: "Private Cage Colocation",
+  tagline: "Dedicated, secured enclosures for enterprise-grade isolation",
+  description:
+    "For businesses with strict compliance or security requirements, our private cages provide a fully isolated footprint with custom access control, separate from shared rack environments.",
+  features: [
+    {
+      icon: "Lock",
+      title: "Dedicated Access Control",
+      description: "Independent keycard and biometric access limited to your team",
+    },
+    {
+      icon: "Building2",
+      title: "Custom Build-Out",
+      description: "Cage dimensions and layout tailored to your hardware",
+    },
+    {
+      icon: "Ruler",
+      title: "Scalable Footprint",
+      description: "Expand your cage size as your infrastructure grows",
+    },
+    {
+      icon: "Clock",
+      title: "Priority Support",
+      description: "Dedicated account manager and faster response SLAs",
+    },
+  ],
+  specs: [
+    { label: "Cage Sizes", value: "Custom sq. ft. layouts" },
+    { label: "Access Control", value: "Independent biometric + keycard" },
+    { label: "Power Capacity", value: "Up to custom high-density design" },
+    { label: "Deployment Lead Time", value: "2-4 weeks from contract signing" },
+  ],
+};
+
+// ============================================
+// POWER & COOLING SERVICE DETAIL
+// ============================================
+
+export const powerCoolingService: ServiceDetailPage = {
+  slug: "power",
+  title: "Power & Cooling Infrastructure",
+  tagline: "N+1 redundant power with precision cooling",
+  description:
+    "Our facility is engineered around uninterrupted uptime — dual utility feeds, battery backup, diesel generator failover, and precision cooling designed to keep hardware running at optimal temperature year-round.",
+  features: [
+    {
+      icon: "PlugZap",
+      title: "Dual Utility Feeds",
+      description: "Independent grid connections with automatic transfer switching",
+    },
+    {
+      icon: "BatteryCharging",
+      title: "UPS Battery Backup",
+      description: "Instant failover protection during power fluctuations",
+    },
+    {
+      icon: "Fuel",
+      title: "Diesel Generator Backup",
+      description: "Extended runtime generators for prolonged outages",
+    },
+    {
+      icon: "Snowflake",
+      title: "Precision Cooling",
+      description: "N+1 redundant CRAC units maintaining optimal rack temperature",
+    },
+  ],
+  specs: [
+    { label: "Power Redundancy", value: "N+1 Configuration" },
+    { label: "Cooling System", value: "Precision CRAC, N+1 Redundant" },
+    { label: "PUE Rating", value: "Below 1.5" },
+    { label: "Generator Runtime", value: "72+ hours at full load" },
+  ],
+};
