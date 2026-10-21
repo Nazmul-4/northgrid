@@ -334,3 +334,123 @@ export const powerCoolingService: ServiceDetailPage = {
     { label: "Generator Runtime", value: "72+ hours at full load" },
   ],
 };
+
+// ============================================
+// BDIX PEERING SERVICE DETAIL
+// ============================================
+
+export const bdixPeeringService: ServiceDetailPage = {
+  slug: "bdix",
+  title: "BDIX Peering",
+  tagline: "Direct access to the Bangladesh Internet Exchange",
+  description:
+    "Our facility maintains direct peering with BDIX, dramatically reducing latency for local traffic and improving performance for domestic users accessing your hosted services.",
+  features: [
+    {
+      icon: "Zap",
+      title: "Low Latency Routing",
+      description: "Local traffic routed directly, bypassing international hops",
+    },
+    {
+      icon: "Network",
+      title: "Optimized Local Traffic",
+      description: "Improved speed for domestic users and ISPs",
+    },
+    {
+      icon: "Link2",
+      title: "Redundant Peering Links",
+      description: "Multiple upstream connections preventing single points of failure",
+    },
+    {
+      icon: "Activity",
+      title: "24/7 Network Monitoring",
+      description: "Real-time traffic analysis and automatic rerouting",
+    },
+  ],
+  specs: [
+    { label: "Peering Type", value: "Direct BDIX Member" },
+    { label: "Average Local Latency", value: "Under 5ms" },
+    { label: "Connected ISPs", value: "40+ domestic networks" },
+    { label: "Uptime SLA", value: "99.982%" },
+  ],
+};
+
+// ============================================
+// STARLINK HARDWARE SERVICE DETAIL
+// ============================================
+
+export const starlinkHardwareService: ServiceDetailPage = {
+  slug: "starlink",
+  title: "Starlink Hardware & Connectivity",
+  tagline: "Satellite-powered redundancy for mission-critical uptime",
+  description:
+    "For businesses that cannot tolerate downtime, our Starlink hardware kits provide an independent satellite connectivity layer — ideal as a primary link for remote sites or automatic failover for critical operations.",
+  features: [
+    {
+      icon: "Satellite",
+      title: "Low Earth Orbit Coverage",
+      description: "Faster response times than traditional geostationary satellites",
+    },
+    {
+      icon: "Globe",
+      title: "Nationwide Availability",
+      description: "Reliable connectivity even in remote or underserved areas",
+    },
+    {
+      icon: "Zap",
+      title: "Automatic Failover",
+      description: "Seamlessly switches over during primary connection outages",
+    },
+    {
+      icon: "Wifi",
+      title: "Quick Deployment",
+      description: "Operational within hours of hardware installation",
+    },
+  ],
+  specs: [
+    { label: "Kit Options", value: "Mini, Standard, High Performance" },
+    { label: "Max Throughput", value: "Up to 500 Mbps" },
+    { label: "Typical Latency", value: "15-50ms" },
+    { label: "Mount Types", value: "Tripod, Roof/Pole, Flat High-Performance" },
+  ],
+};
+
+// ============================================
+// DEDICATED FIBER SERVICE DETAIL
+// ============================================
+
+export const dedicatedFiberService: ServiceDetailPage = {
+  slug: "fiber",
+  title: "Dedicated Fiber Connectivity",
+  tagline: "Point-to-point fiber links across Dhaka",
+  description:
+    "Our dedicated fiber connections provide guaranteed, symmetric bandwidth between your business locations and our data center — with no contention or sharing with other customers.",
+  features: [
+    {
+      icon: "Cable",
+      title: "Point-to-Point Links",
+      description: "Direct fiber connection with no shared infrastructure",
+    },
+    {
+      icon: "Gauge",
+      title: "Guaranteed Bandwidth",
+      description: "Symmetric upload and download speeds, no throttling",
+    },
+    {
+      icon: "MapPin",
+      title: "Diverse Physical Routing",
+      description: "Separate physical paths available for redundancy",
+    },
+    {
+      icon: "ShieldCheck",
+      title: "Carrier-Grade SLA",
+      description: "Guaranteed uptime with financially backed commitments",
+    },
+  ],
+  specs: [
+    { label: "Link Types", value: "Point-to-Point, Point-to-Multipoint" },
+    { label: "Bandwidth Range", value: "10 Mbps - 10 Gbps" },
+    { label: "Average Latency", value: "Under 3ms (metro area)" },
+    { label: "Coverage Area", value: "Greater Dhaka Metropolitan Area" },
+  ],
+};

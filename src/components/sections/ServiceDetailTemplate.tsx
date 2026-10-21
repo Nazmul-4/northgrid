@@ -5,9 +5,10 @@ import { iconMap } from "@/lib/iconMap";
 
 interface ServiceDetailTemplateProps {
   service: ServiceDetailPage;
+  children?: React.ReactNode;
 }
 
-export default function ServiceDetailTemplate({ service }: ServiceDetailTemplateProps) {
+export default function ServiceDetailTemplate({ service, children }: ServiceDetailTemplateProps) {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
       {/* Back Link */}
@@ -73,9 +74,12 @@ export default function ServiceDetailTemplate({ service }: ServiceDetailTemplate
           ))}
         </div>
       </div>
+       {/* Optional Injected Content (e.g. interactive selectors) */}
+      {children && <div className="mb-16">{children}</div>}
+
 
       {/* CTA */}
-      <div className="rounded-xl border border-accent-blue/30 bg-accent-blue/5 p-8 text-center">
+       <div className="rounded-xl border border-accent-blue/30 bg-accent-blue/5 p-8 text-center">
         <h3 className="text-xl font-bold text-white">Ready to get started?</h3>
         <p className="mt-2 text-slate-400">
           Talk to our team about {service.title.toLowerCase()}
