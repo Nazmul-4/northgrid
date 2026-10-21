@@ -20,6 +20,12 @@ import {
   Gauge,
   MapPin,
   ShieldCheck,
+  Camera,
+  Fingerprint,
+  DoorClosed,
+  UserCheck,
+  Siren,
+  FileCheck,
   LucideIcon,
 } from "lucide-react";
 
@@ -45,4 +51,10 @@ export const iconMap: Record<string, LucideIcon> = {
   Gauge,
   MapPin,
   ShieldCheck,
+  Camera,
+  Fingerprint,
+  DoorClosed,
+  UserCheck,
+  Siren,
+  FileCheck,
 };

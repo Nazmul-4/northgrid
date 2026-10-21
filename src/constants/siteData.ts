@@ -1,11 +1,34 @@
-import { NavCategory, Partner, ColocationPlan, StarlinkKit, HeroMetric, ComplianceBadge, FAQItem, ServiceDetailPage } from "@/types";
-
+import { NavCategory, Partner, ColocationPlan, StarlinkKit, HeroMetric, ComplianceBadge, FAQItem, ServiceDetailPage, TeamMember, NavLink } from "@/types";
 
 // ============================================
 // MEGA-MENU NAVIGATION DATA
 // ============================================
+// ============================================
+// HOME NAV LINK (standalone, no dropdown)
+// ============================================
 
+export const homeNavLink: NavLink = {
+  label: "Home",
+  href: "/",
+  description: "Return to the NorthGrid homepage",
+};
 export const navCategories: NavCategory[] = [
+  
+  {
+  title: "Company",
+  links: [
+    {
+      label: "Our Story",
+      href: "/about/story",
+      description: "Learn about NorthGrid's mission and values",
+    },
+    {
+      label: "Leadership Team",
+      href: "/about/leadership",
+      description: "Meet the people driving our infrastructure forward",
+    },
+  ],
+},
   {
     title: "Colocation",
     links: [
@@ -24,6 +47,7 @@ export const navCategories: NavCategory[] = [
         href: "/colocation/power",
         description: "N+1 redundant power with precision cooling",
       },
+      
     ],
   },
   {
@@ -454,3 +478,156 @@ export const dedicatedFiberService: ServiceDetailPage = {
     { label: "Coverage Area", value: "Greater Dhaka Metropolitan Area" },
   ],
 };
+
+// ============================================
+// SECURITY STANDARDS SERVICE DETAIL
+// ============================================
+
+export const securityStandardsService: ServiceDetailPage = {
+  slug: "security",
+  title: "Security Standards",
+  tagline: "Multi-layered physical and digital security protocols",
+  description:
+    "Our facility combines physical access control, continuous surveillance, and trained security personnel to protect your infrastructure around the clock. Every layer is designed to prevent unauthorized access before it happens.",
+  features: [
+    {
+      icon: "Fingerprint",
+      title: "Biometric Access Control",
+      description: "Multi-factor authentication at every facility entry point",
+    },
+    {
+      icon: "Camera",
+      title: "24/7 CCTV Surveillance",
+      description: "Continuous recorded monitoring of all facility zones",
+    },
+    {
+      icon: "DoorClosed",
+      title: "Mantrap Entry Systems",
+      description: "Single-person verified access preventing tailgating",
+    },
+    {
+      icon: "UserCheck",
+      title: "On-Site Security Personnel",
+      description: "Trained staff physically present around the clock",
+    },
+  ],
+  specs: [
+    { label: "Access Control", value: "Biometric + Keycard, Multi-Factor" },
+    { label: "Surveillance Coverage", value: "100% of facility, 90-day retention" },
+    { label: "Security Staffing", value: "24/7/365 on-site personnel" },
+    { label: "Visitor Policy", value: "Pre-authorized, escorted access only" },
+  ],
+};
+
+// ============================================
+// UPTIME SLA SERVICE DETAIL
+// ============================================
+
+export const uptimeSlaService: ServiceDetailPage = {
+  slug: "sla",
+  title: "Uptime SLA",
+  tagline: "99.982% guaranteed uptime commitment",
+  description:
+    "We back our infrastructure with a financially-backed service level agreement. Redundant systems, proactive monitoring, and rapid incident response work together to keep your operations running without interruption.",
+  features: [
+    {
+      icon: "Activity",
+      title: "Proactive Monitoring",
+      description: "Real-time alerts catch issues before they cause downtime",
+    },
+    {
+      icon: "Building2",
+      title: "Redundant Infrastructure",
+      description: "N+1 power, cooling, and network paths across the facility",
+    },
+    {
+      icon: "Siren",
+      title: "Rapid Incident Response",
+      description: "On-site engineering team responds within minutes",
+    },
+    {
+      icon: "FileCheck",
+      title: "Financially-Backed SLA",
+      description: "Service credits issued automatically for any missed targets",
+    },
+  ],
+  specs: [
+    { label: "Guaranteed Uptime", value: "99.982% Annually" },
+    { label: "Power Redundancy", value: "N+1 Configuration" },
+    { label: "Network Redundancy", value: "Multi-carrier, diverse routing" },
+    { label: "Incident Response Time", value: "Under 15 minutes" },
+  ],
+};
+
+
+
+// ============================================
+// COMPANY STORY (reuses ServiceDetailPage shape)
+// ============================================
+
+export const companyStoryService: ServiceDetailPage = {
+  slug: "story",
+  title: "About NorthGrid",
+  tagline: "Building Bangladesh's digital backbone, one rack at a time",
+  description:
+    "NorthGrid Data Centers was founded to solve a simple problem: Bangladeshi businesses needed enterprise-grade infrastructure without having to rely on facilities overseas. Today, we provide colocation, connectivity, and compliance-ready hosting trusted by growing businesses across the region.",
+  features: [
+    {
+      icon: "ShieldCheck",
+      title: "Reliability First",
+      description: "Every design decision starts with uptime and redundancy",
+    },
+    {
+      icon: "Lock",
+      title: "Security by Default",
+      description: "Physical and digital security built into every layer",
+    },
+    {
+      icon: "TrendingUp",
+      title: "Built to Scale",
+      description: "Infrastructure that grows alongside our clients' needs",
+    },
+    {
+      icon: "UserCheck",
+      title: "Customer-Centric",
+      description: "Dedicated support teams who understand your business",
+    },
+  ],
+  specs: [
+    { label: "Founded", value: "2019" },
+    { label: "Headquarters", value: "Dhaka, Bangladesh" },
+    { label: "Team Size", value: "60+ Engineers & Support Staff" },
+    { label: "Clients Served", value: "200+ Businesses" },
+  ],
+};
+
+// ============================================
+// LEADERSHIP TEAM MEMBERS
+// ============================================
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: "ceo",
+    name: "Arif Rahman",
+    role: "Chief Executive Officer",
+    bio: "15+ years in telecommunications infrastructure, previously led network operations at a regional ISP.",
+  },
+  {
+    id: "cto",
+    name: "Nusrat Jahan",
+    role: "Chief Technology Officer",
+    bio: "Specializes in data center architecture and network redundancy design across South Asia.",
+  },
+  {
+    id: "security-head",
+    name: "Tanvir Ahmed",
+    role: "Head of Security & Compliance",
+    bio: "Former information security consultant focused on ISO 27001 aligned infrastructure practices.",
+  },
+  {
+    id: "ops-head",
+    name: "Farah Hossain",
+    role: "Head of Operations",
+    bio: "Oversees 24/7 facility operations, client onboarding, and service level management.",
+  },
+];

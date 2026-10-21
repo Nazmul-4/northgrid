@@ -21,7 +21,9 @@ export default function Footer() {
           {/* Dynamic Columns from our nav data */}
           {navCategories.map((category) => (
             <div key={category.title}>
-              <h4 className="text-white font-semibold mb-3">{category.title}</h4>
+              <h4 className="text-white font-semibold mb-3">
+                {category.title}
+              </h4>
               <ul className="space-y-2">
                 {category.links.map((link) => (
                   <li key={link.href}>

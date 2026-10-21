@@ -111,3 +111,15 @@ export interface ServiceDetailPage {
   features: ServiceFeature[];
   specs: ServiceSpec[];
 }
+
+// ============================================
+// TEAM MEMBER TYPE
+// Used for Leadership Team page (Phase 11.8)
+// ============================================
+
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+}
